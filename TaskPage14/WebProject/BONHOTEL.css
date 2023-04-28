@@ -1,0 +1,628 @@
+@font-face {
+    font-family: "Ubuntu";
+    src: url(../Fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url(../Fonts/Segoe_UI.ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.header{
+    width: 100%;
+    height: 241px;
+}
+.header .Logo{
+    height: 101px;
+    width: 151px;
+    margin-left: 648px;
+    margin-top: 34px;
+}
+
+.navbar{
+    width: 820px;
+    height: 28px;
+    display: flex;
+    margin-top: 48px;
+    margin-left: 385px;
+    padding-top: 0px;
+    gap: 35px;
+    position: relative;
+}
+
+.navbar .navbarLink{
+    text-decoration: none;
+    font-family: "Ubuntu";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    color:rgba(149, 117, 84, 1);
+}
+
+.navbar ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar ul li :hover{
+    background: rgba(149, 117, 84, 0.1);
+    border-radius: 6px;
+
+}
+
+
+
+.SearchContainer:hover input{   
+    background-color: rgba(149, 117, 84, 0.12);
+    color: rgba(149, 117, 84, 0.5);
+    border-style: none;
+    outline: none;
+    border-radius: 3px;
+    width: 170px;
+    height: 28px;
+    padding-left: 15px;
+}
+
+
+.SearchContainer input {
+    background-color: rgba(149, 117, 84, 0.12);
+    color: rgba(149, 117, 84, 0.5);
+    border-style: none;
+    outline: none;
+    background: transparent;
+    border-radius: 3px;
+    width: 0px;
+    font-family: "Ubuntu";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    transition: 0.8s;
+}
+
+.SearchContainer .bx-search{
+    color:rgba(149, 117, 84, 1);
+    font-size:   19px;
+}
+
+
+.CoverElements{
+    position: relative;
+    width: 100%;
+    height: 909px;
+}
+
+
+.menu1{
+    background: #111111;
+    width: 100%;
+    height: 119px;
+    display: flex;
+}
+
+.select-city {
+    background:#ffff;
+    height: 60px;
+    width: 192px;
+    border-radius: 10px;
+    margin-top: 27px;
+    margin-left: 330px;
+}
+
+.select-btn{
+    background-color: #ffff;
+    display: flex;
+    height: 60px;
+    width: 192px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.Select_Text{
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Ubuntu";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 23px;
+}
+.select-btn i{
+    color: #DFAA5B;
+    font-size: 22px;
+    transition: 0.5s;
+}
+
+.select-city.active .select-btn i{
+    transform: rotate(-180deg);
+    transition: 0.5s;
+}
+
+.select-city .options{
+    position: relative;
+    padding: 7px;
+    background: #fff;
+    margin-top: 3px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.select-city.active .options{
+    display: block;
+}
+
+.options .option{
+    display: flex;
+    height: 47px;
+    list-style: none;
+    cursor: pointer;
+    padding: 0 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+    align-items: center;
+    background: #fff;
+}
+
+.options .option:hover{
+    background: #f2f2f2;
+}
+.option .option-text{
+    font-family: "Ubuntu";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.Check_In_Container{
+    background: #FFFFFF;
+    height: 60px;
+    width: 192px;
+    margin-top: 27px;
+    margin-left: 13px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.Check_In_Container  .Check_In{
+    font-family: "Ubuntu";
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 23px;
+    text-decoration: none;
+}
+
+.Check_In_Container i{
+    font-size: 19px;
+    color: #DFAA5B;
+}
+
+.Check_Availability{
+    height: 60px;
+    width: 202px;
+    margin-top: 27px;
+    margin-left: 13px;
+    border-radius: 10px;
+    background: #DFAA5B; 
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.Check_Availability a{
+    text-decoration:none;
+    color: #FFFFFF;
+    font-family: "Ubuntu";
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 23px;
+}
+
+.Cover_Photo{
+    height: 790px;
+    width: 100%;
+}
+
+.CoverSection1{
+    height: 90px;
+    width: 1000px;
+    position: absolute;
+    top: 453px;
+    left: 244px;
+    font-family: "Segoe UI";
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 106px;    
+    color: #FFFFFF;
+}
+
+
+.CoverSection2{
+    height: 28px;
+    width: 474px;
+    position: absolute;
+    top: 556px;
+    left: 474px;
+    font-family: "Ubuntu";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.Coverbutton{
+    position: absolute;
+    background: #DFAA5B;
+    height: 76px;
+    width: 371px;
+    left: 535px;
+    top: 625px;
+    border-radius: 10px;
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: "Ubuntu";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+
+.menubar2{
+    background:rgba(255, 255, 255, 1);
+    height: 289px;
+    width: 1319px;
+    position: absolute;
+    left: 61px;
+    top: 989px;
+    border-radius: 10px;
+}
+.Facilities_div{
+    height: 52px;
+    width: 184px;
+    margin-left: 567px;
+    margin-top: 42px;
+    font-family: "Ubuntu";
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 52px;
+    color: #957554;
+}
+
+.menubar2_div_Icons{
+    display: flex;
+    width: 100%;
+    height: 98px;
+    margin-top: 54px;
+    padding-left: 197px;
+    padding-right: 198px;
+    justify-content: space-between;
+    
+}
+
+.menubar2_div_Icons ul li{
+    list-style: none;
+}
+
+.menubar2_div_Icons i{
+    color: #DFAA5B;
+}
+
+.menubar2_div_Icons a{
+    font-family: "Ubuntu";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #957554;
+    text-decoration: none;
+    position: absolute;
+    left: 30%;
+    top: 70%;
+}
+
+#div{
+    width: 100px;
+    height: 98px;
+    position: relative;
+    display: flex;
+
+}
+
+#div .img{
+    justify-content: center;
+    height: 48px;
+    width: 54px;
+    position: absolute;
+    left: 25%;
+}
+
+.Gym{
+    height: 27px;
+    width: 54px;
+    position: absolute;
+    left: 25%;
+    top: 15%;
+}
+
+#a_Kitchen{
+    position: absolute;
+    font-family: "Ubuntu";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #957554;
+    top: 70%;
+    left: 10%;
+}
+
+#div:hover a{
+    background: rgba(149, 117, 84, 0.1);
+    border-radius: 6px;
+}
+
+.Rooms_Rates{
+    height: 52px;
+    width: 312px;
+    margin-top: 186px;
+    margin-left: 564px;
+    font-family: "Ubuntu";
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 52px;
+    color: #957554;
+}
+
+.Rooms_Section{
+    width: 100%;
+    height: 1104px;
+    padding-top: 53px;
+
+}
+
+.rooms_div1{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    padding-left: 60px;
+    gap: 60px;
+}
+
+.rooms_div2{
+    width: 100%;
+    height: 560px;
+    display: flex;
+    padding-top: 60px;
+    padding-left: 60px;
+    gap: 60px;
+}
+.Rooms_Section .divImage1{
+    height: 500px;
+    width: 630px;
+    background-image: url(../Ficture/Standard_Twin_Room.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+
+}
+
+.Rooms_Section .divImage2{
+    height: 500px;
+    width: 630px;
+    background-image: url(../Ficture/Standard_Room.png);
+    background-size: cover;
+    border-radius: 10px;
+
+}
+
+.Rooms_Section .divImage3{
+    height: 500px;
+    width: 630px;
+    background-image: url(../Ficture/Standard_View_Room.png);
+    background-size: cover;
+    border-radius: 10px;
+
+}
+
+.Rooms_Section .divImage4{
+    height: 500px;
+    width: 630px;
+    background-image: url(../Ficture/Deluxe_Room.png);
+    background-size: cover;
+    border-radius: 10px;
+
+}
+
+
+.span{
+    font-family: "Ubuntu";
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 46px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 301px;
+}
+
+ .button_Check_Rates{
+    height: 76px;
+    width: 244px;
+    margin-top: 19px;
+    margin-left: 194px;
+    border-radius: 10px;
+    font-family: "Ubuntu";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    background: rgba(223, 170, 91, 1);
+    color: #FFFFFF;
+    border-style: none;
+    outline: none; 
+    cursor: pointer;
+}
+
+.last_section{
+    height: 277px;
+    width: 1319px;
+    margin-top: 53px;
+    margin-left: 61px;
+    border-radius: 10px;
+}
+
+.last_div{
+    color: rgba(149, 117, 84, 1);
+    height: 52px;
+    width: 411px;
+    margin-top: 61px;
+    margin-left: 451px;
+    font-family: "Ubuntu";
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 52px;
+}
+
+.Book_Now{
+    background: rgba(223, 170, 91, 1);
+    height: 76px;
+    width: 418px;
+    margin-top: 38px;
+    margin-left: 451px;
+    border-radius: 10px;
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "Ubuntu";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+footer{
+    position: relative;
+    background: rgba(17, 17, 17, 1);
+    height: 480px;
+    width: 100%;
+    margin-top: 62px;
+    padding: 0px;
+}
+
+#Footer_Logo{
+    position: absolute;
+    height: 126px;
+    width: 154px;
+    top: 61px;
+    left: 55px;
+}
+
+
+ #Footer_adress{
+    position: absolute;
+    height: 83px;
+    width: 263px;
+    top: 255px;
+    left: 59px;
+    font-family: "Ubuntu";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 1);
+    font-style: normal;
+
+}
+
+#Footer_navigation{
+    position: absolute;
+    height: 249px;
+    width: 194px;
+    left: 554px;
+    top:  61px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Footer_navigation ul li{
+    list-style: none;
+    height: 24px;
+    width: 194px;
+
+}
+
+#Footer_navigation a{
+    font-family: "Ubuntu";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+#Footer_navigation ul li:hover a{
+    text-decoration: underline;
+}
+
+#Footer_form{
+    height: 228px;
+    width: 371px;
+    position: absolute;
+    top: 61px;
+    right: 70px;
+}
+
+#Footer_form  label{
+    font-family: "Ubuntu";
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 34px;
+    color: rgba(255, 255, 255, 1);
+}
+
+#Footer_form input{
+    background: rgba(255, 255, 255, 1);
+    height: 75px;
+    width: 371px;
+    border-radius: 10px;
+    font-family: "Ubuntu";
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;
+    padding-left: 27px;
+    color: rgba(0, 0, 0, 0.5);
+    border: none;
+    outline: none;  
+}
+
+#Footer_form button{
+    background: rgba(223, 170, 91, 1);
+    height: 75px;
+    width: 371px;
+    border-radius: 10px
+    ;font-family: "Ubuntu";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
